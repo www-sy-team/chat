@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>com.luohuo.flex</groupId>
+        <artifactId>luohuo-dependencies-parent</artifactId>
+        <version>3.0.6</version>
+        <relativePath>../luohuo-dependencies-parent/pom.xml</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>luohuo-game</artifactId>
+    <name>${project.artifactId}</name>
+    <description>游戏服务模块-包含狼人杀和你画我猜游戏业务</description>
+    <packaging>pom</packaging>
+    <modules>
+        <module>luohuo-game-entity</module>
+        <module>luohuo-game-biz</module>
+        <module>luohuo-game-controller</module>
+        <module>luohuo-game-facade</module>
+        <module>luohuo-game-server</module>
+    </modules>
+
+</project>
