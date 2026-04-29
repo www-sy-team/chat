@@ -6,6 +6,10 @@ spring:
     allow-bean-definition-overriding: true
   application:
     name: luohuo-game
+  autoconfigure:
+    exclude:
+      - com.luohuo.basic.swagger2.SwaggerAutoConfiguration
+      - com.github.xiaoymin.knife4j.spring.configuration.Knife4jAutoConfiguration
   cloud:
     nacos:
       discovery:
@@ -25,9 +29,6 @@ spring:
           - dataId: redis.yml
             group: DEFAULT_GROUP
             refresh: true
-  autoconfigure:
-    exclude:
-      - com.github.xiaoymin.knife4j.spring.configuration.Knife4jAutoConfiguration
 
 luohuo:
   swagger:
