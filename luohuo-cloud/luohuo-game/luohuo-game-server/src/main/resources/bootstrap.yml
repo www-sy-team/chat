@@ -2,6 +2,8 @@ server:
   port: 8086
 
 spring:
+  main:
+    allow-bean-definition-overriding: true
   application:
     name: luohuo-game
   cloud:
@@ -23,6 +25,13 @@ spring:
           - dataId: redis.yml
             group: DEFAULT_GROUP
             refresh: true
+  autoconfigure:
+    exclude:
+      - com.github.xiaoymin.knife4j.spring.configuration.Knife4jAutoConfiguration
+
+luohuo:
+  swagger:
+    version: 3.0.6
 
 profiles:
   active: dev
