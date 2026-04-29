@@ -1,0 +1,24 @@
+server:
+  port: 18773
+
+gitee:
+  client-id: 7bfd321d227eb9b43efd2b722ae1c7b0b71847742093de6ad41c8b19761fbcf5
+  client-secret: acce1a84913a683f884aee712c03ece839ea9df04183e5076b6ac32640339006
+  redirect-uri: http://127.0.0.1:18760/api/oauth/anyTenant/gitee/callback
+
+github:
+  client-id: Ov23liDQr87ueZCGLf09
+  client-secret: f18045b4a2e1e460411c22a542bd1dc55f35ee65
+  redirect-uri: http://127.0.0.1:18760/api/oauth/anyTenant/github/callback
+
+gitcode:
+  client-id: 965d19b4f9bf41f89a4de5448236bd03
+  client-secret: f5d94813d5c945168b187bffbedf5a0d
+  redirect-uri: http://127.0.0.1:18760/api/oauth/anyTenant/gitcode/callback
+
+springdoc:
+  group-configs:
+    - group: 'oauth_auth'
+      displayName: 'oauth'
+      paths-to-match: '/**'
+      packages-to-scan: com.luohuo.flex.oauth

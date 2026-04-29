@@ -63,7 +63,7 @@ public class DrawingRoomService {
         }
 
         DrawingPlayer existingPlayer = playerMapper.selectOne(
-            com.baomidou.mybatisplus.core.toolkit.Wrappers.<DrawingPlayer>lambdaQuery()
+            com.baomidou.mybatisplus.core.toolkit.Wrappers.lambdaQuery(DrawingPlayer.class)
                 .eq(DrawingPlayer::getRoomId, roomId)
                 .eq(DrawingPlayer::getUserId, userId)
         );
@@ -90,7 +90,7 @@ public class DrawingRoomService {
         }
 
         DrawingPlayer player = playerMapper.selectOne(
-            com.baomidou.mybatisplus.core.toolkit.Wrappers.<DrawingPlayer>lambdaQuery()
+            com.baomidou.mybatisplus.core.toolkit.Wrappers.lambdaQuery(DrawingPlayer.class)
                 .eq(DrawingPlayer::getRoomId, roomId)
                 .eq(DrawingPlayer::getUserId, userId)
         );
