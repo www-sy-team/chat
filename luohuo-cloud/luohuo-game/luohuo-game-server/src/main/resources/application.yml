@@ -1,0 +1,35 @@
+server:
+  port: 8086
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: luohuo-game
+  autoconfigure:
+    exclude:
+      - com.luohuo.basic.swagger2.SwaggerAutoConfiguration
+      - com.github.xiaoymin.knife4j.spring.configuration.Knife4jAutoConfiguration
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+        namespace: bfa0d426-e281-4da0-b830-c3962ed883d1
+      config:
+        server-addr: localhost:8848
+        namespace: bfa0d426-e281-4da0-b830-c3962ed883d1
+        file-extension: yml
+        shared-configs:
+          - dataId: common.yml
+            group: DEFAULT_GROUP
+            refresh: true
+          - dataId: mysql.yml
+            group: DEFAULT_GROUP
+            refresh: true
+          - dataId: redis.yml
+            group: DEFAULT_GROUP
+            refresh: true
+
+luohuo:
+  swagger:
+    version: 3.0.6
