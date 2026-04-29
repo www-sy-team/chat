@@ -8,11 +8,21 @@ spring:
     nacos:
       discovery:
         server-addr: localhost:8848
+        namespace: bfa0d426-e281-4da0-b830-c3962ed883d1
       config:
         server-addr: localhost:8848
+        namespace: bfa0d426-e281-4da0-b830-c3962ed883d1
         file-extension: yml
         shared-configs:
-          - application-${spring.profiles.active}.yml
+          - dataId: common.yml
+            group: DEFAULT_GROUP
+            refresh: true
+          - dataId: mysql.yml
+            group: DEFAULT_GROUP
+            refresh: true
+          - dataId: redis.yml
+            group: DEFAULT_GROUP
+            refresh: true
 
 profiles:
   active: dev
