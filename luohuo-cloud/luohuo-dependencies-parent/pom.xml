@@ -180,14 +180,9 @@
                 <version>${luohuo-project.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.luohuo.flex</groupId>
-                <artifactId>luohuo-boot-server</artifactId>
-                <version>${luohuo-project.version}</version>
-            </dependency>
-            <dependency>
                 <groupId>com.luohuo.basic</groupId>
                 <artifactId>luohuo-boot-server</artifactId>
-                <version>${luohuo-project.version}</version>
+                <version>${luohuo-util.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.alibaba</groupId>
