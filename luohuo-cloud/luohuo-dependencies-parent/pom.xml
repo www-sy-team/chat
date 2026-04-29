@@ -145,6 +145,46 @@
                 <version>${luohuo-util.version}</version>
             </dependency>
             <dependency>
+                <groupId>com.luohuo.flex</groupId>
+                <artifactId>luohuo-game-entity</artifactId>
+                <version>${luohuo-project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.luohuo.flex</groupId>
+                <artifactId>luohuo-game-biz</artifactId>
+                <version>${luohuo-project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.luohuo.flex</groupId>
+                <artifactId>luohuo-game-controller</artifactId>
+                <version>${luohuo-project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.luohuo.flex</groupId>
+                <artifactId>luohuo-game-api</artifactId>
+                <version>${luohuo-project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.luohuo.flex</groupId>
+                <artifactId>luohuo-game-boot-impl</artifactId>
+                <version>${luohuo-project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.luohuo.flex</groupId>
+                <artifactId>luohuo-game-cloud-impl</artifactId>
+                <version>${luohuo-project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.luohuo.flex</groupId>
+                <artifactId>luohuo-game-facade</artifactId>
+                <version>${luohuo-project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.luohuo.flex</groupId>
+                <artifactId>luohuo-boot-server</artifactId>
+                <version>${luohuo-project.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>com.alibaba</groupId>
                 <artifactId>transmittable-thread-local</artifactId> <!-- 解决 ThreadLocal 父子线程的传值问题 -->
                 <version>${transmittable-thread-local.version}</version>
