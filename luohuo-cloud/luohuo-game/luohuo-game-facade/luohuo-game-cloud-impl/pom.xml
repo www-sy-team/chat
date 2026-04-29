@@ -20,7 +20,7 @@
             <artifactId>luohuo-game-api</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.luohuo.flex</groupId>
+            <groupId>com.luohuo.basic</groupId>
             <artifactId>luohuo-cloud-starter</artifactId>
         </dependency>
     </dependencies>

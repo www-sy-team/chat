@@ -16,7 +16,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.luohuo.flex</groupId>
+            <groupId>com.luohuo.basic</groupId>
             <artifactId>luohuo-core</artifactId>
         </dependency>
         <dependency>
