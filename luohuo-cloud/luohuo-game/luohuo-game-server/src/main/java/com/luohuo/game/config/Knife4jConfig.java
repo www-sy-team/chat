@@ -12,8 +12,6 @@ public class Knife4jConfig {
     @ConditionalOnMissingBean(Knife4jProperties.class)
     public Knife4jProperties knife4jProperties() {
         Knife4jProperties properties = new Knife4jProperties();
-        properties.getOpenapi().setTitle("luohuo-game API");
-        properties.getOpenapi().setVersion("3.0.6");
         properties.setEnable(true);
         return properties;
     }
