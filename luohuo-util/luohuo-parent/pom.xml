@@ -79,6 +79,7 @@
         <asm.version>5.0.4</asm.version>
         <tobato-fastdfs-client.version>1.27.3-SNAPSHOT</tobato-fastdfs-client.version>
         <tencentcloud-sdk-java.version>4.0.11</tencentcloud-sdk-java.version>
+        <javax.jws-api.version>1.1</javax.jws-api.version>
         <aliyun-dysmsapi.version>3.0.0</aliyun-dysmsapi.version>
         <aliyun-sdk-oss.version>3.18.1</aliyun-sdk-oss.version>
         <bce-java-sdk.version>0.10.336</bce-java-sdk.version>
