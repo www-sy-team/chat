@@ -230,6 +230,10 @@
                     <groupId>org.slf4j</groupId>
                     <artifactId>slf4j-reload4j</artifactId>
                 </exclusion>
+                <exclusion>
+                    <groupId>com.agentsflex</groupId>
+                    <artifactId>agents-flex-image-volcengine</artifactId>
+                </exclusion>
             </exclusions>
         </dependency>
         <!-- 七牛云SDK -->
