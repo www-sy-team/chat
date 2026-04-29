@@ -25,7 +25,7 @@
         </dependency>
         <dependency>
             <groupId>com.luohuo.flex</groupId>
-            <artifactId>luohuo-game-facade</artifactId>
+            <artifactId>luohuo-game-boot-impl</artifactId>
         </dependency>
     </dependencies>
 </project>
