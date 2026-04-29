@@ -80,7 +80,7 @@ public class WerewolfGameService {
         }
 
         WerewolfPlayer actor = playerMapper.selectOne(
-            com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper.<WerewolfPlayer>query()
+            com.baomidou.mybatisplus.core.toolkit.Wrappers.<WerewolfPlayer>lambdaQuery()
                 .eq(WerewolfPlayer::getRoomId, roomId)
                 .eq(WerewolfPlayer::getUserId, userId)
         );
@@ -146,7 +146,7 @@ public class WerewolfGameService {
     @Transactional
     public Map<String, Object> vote(Long roomId, Long userId, Long targetId) {
         WerewolfPlayer voter = playerMapper.selectOne(
-            com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper.<WerewolfPlayer>query()
+            com.baomidou.mybatisplus.core.toolkit.Wrappers.<WerewolfPlayer>lambdaQuery()
                 .eq(WerewolfPlayer::getRoomId, roomId)
                 .eq(WerewolfPlayer::getUserId, userId)
         );

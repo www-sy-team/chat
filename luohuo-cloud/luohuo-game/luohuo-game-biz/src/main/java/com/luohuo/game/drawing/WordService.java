@@ -25,7 +25,7 @@ public class WordService {
 
     public List<DrawingWord> getWordsByCategory(String category) {
         return wordMapper.selectList(
-            com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper.<DrawingWord>query()
+            com.baomidou.mybatisplus.core.toolkit.Wrappers.<DrawingWord>lambdaQuery()
                 .eq(DrawingWord::getCategory, category)
         );
     }

@@ -63,7 +63,7 @@ public class WerewolfRoomService {
         }
 
         WerewolfPlayer existingPlayer = playerMapper.selectOne(
-            com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper.<WerewolfPlayer>query()
+            com.baomidou.mybatisplus.core.toolkit.Wrappers.<WerewolfPlayer>lambdaQuery()
                 .eq(WerewolfPlayer::getRoomId, roomId)
                 .eq(WerewolfPlayer::getUserId, userId)
         );
@@ -90,7 +90,7 @@ public class WerewolfRoomService {
         }
 
         WerewolfPlayer player = playerMapper.selectOne(
-            com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper.<WerewolfPlayer>query()
+            com.baomidou.mybatisplus.core.toolkit.Wrappers.<WerewolfPlayer>lambdaQuery()
                 .eq(WerewolfPlayer::getRoomId, roomId)
                 .eq(WerewolfPlayer::getUserId, userId)
         );

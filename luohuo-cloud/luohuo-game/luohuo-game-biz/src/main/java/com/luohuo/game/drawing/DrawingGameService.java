@@ -66,7 +66,7 @@ public class DrawingGameService {
         }
 
         DrawingPlayer player = playerMapper.selectOne(
-            com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper.<DrawingPlayer>query()
+            com.baomidou.mybatisplus.core.toolkit.Wrappers.lambdaQuery(DrawingPlayer.class)
                 .eq(DrawingPlayer::getRoomId, roomId)
                 .eq(DrawingPlayer::getUserId, userId)
         );
